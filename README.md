@@ -14,3 +14,29 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# CRM Prototype
+
+## Setup
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Add environment variables in `.env`:
+   ```env
+   VITE_SUPABASE_URL=...
+   VITE_SUPABASE_ANON_KEY=...
+   ```
+3. Start dev server:
+   ```bash
+   npm run dev
+   ```
+
+## Deploy (GitHub Pages)
+This repo is configured for GitHub Pages at:
+`https://tr-consulting.github.io/crm/`
+
+Steps:
+1. Push to `main`.
+2. GitHub Actions builds and publishes to `gh-pages`.
+
+If you change the repo name, update the `base` in `vite.config.js`.
